@@ -1,0 +1,21 @@
+:root {
+  --short_bread: #fbe790;
+  --overall_blue: #86bdfd;
+  --desc_gray: #808080;
+  --title: 36px;
+  --prod_desc: 12px;
+  --semi-bold: 600;
+}
+
+body {
+  margin: 0;
+  width: 430px;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+h1 {
+  font-weight: var(--semi-bold);
+}
