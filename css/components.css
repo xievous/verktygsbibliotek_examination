@@ -12,6 +12,7 @@
   background-color: var(--short_bread);
   width: 100%;
   display: flex;
+  height: 8vh;
 }
 
 .navigation article {
@@ -23,12 +24,60 @@
 }
 
 .navigation img {
-  margin-left: 7rem;
+  float: right;
+  margin-right: 5%;
   height: 59px;
   width: 59px;
 }
 
-/* Main section */
+/* Button Komponenter */
+
+.button_borrow {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--overall_blue);
+  width: 50%;
+  height: 3vh;
+  border-radius: 4px;
+  border-style: none;
+  margin: 5px;
+}
+
+.button_borrow a {
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  font-weight: var(--semi-bold);
+  font-size: 1rem;
+}
+
+.button__variant {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5%;
+}
+
+.button__variant a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  background-color: var(--overall_blue);
+  padding: 3%;
+  width: 40%;
+  border-radius: 4px;
+}
+
+/* Text stilar */
+
+.desc {
+  color: var(--desc_gray);
+  font-size: var(--prod_desc);
+  font-weight: var(--semi-bold);
+  text-align: center;
+}
+
+/* Huvud sidan */
+
 .verktyg {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -39,7 +88,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
   margin: 10px;
   border-radius: 7px;
   background-color: var(--short_bread);
@@ -50,38 +98,19 @@
   width: 145px;
 }
 
-.verktyg__card p {
-  color: var(--desc_gray);
-  font-size: var(--prod_desc);
-  text-align: center;
-}
-
-.verktyg__card a {
-  color: #000000;
-  text-decoration: none;
-  text-align: center;
-  font-weight: var(--semi-bold);
-  margin: 10px;
-  border-radius: 6px;
-  height: 5vh;
-  width: 9vw;
-  background-color: var(--overall_blue);
-}
+/* Översikt Sidan */
 
 .loaned__row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: var(--short_bread);
   border-radius: 4px;
-  height: 20vh;
+  height: 10vh;
   margin-bottom: 25px;
 }
 
 .loaned__row__img {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 .loaned__row img {
@@ -90,12 +119,11 @@
 }
 
 .loaned__row__content {
-  width: 20vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-right: 3%;
+  margin-right: 15%;
 }
 
 .content__header {
@@ -119,12 +147,6 @@
   border-left: #000000 solid 2px;
 }
 
-.loaned__row__content p {
-  font-size: var(--prod_desc);
-  color: var(--desc_gray);
-  text-align: center;
-  width: 15vw;
-}
 .retrieve p {
   border-top: #d9d9d9 2px solid;
   border-bottom: #d9d9d9 2px solid;
@@ -134,22 +156,7 @@
   padding-bottom: 10px;
 }
 
-.button__variant {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 5%;
-}
-
-.button__variant a {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  color: #000000;
-  background-color: var(--overall_blue);
-  padding: 3%;
-  width: 40%;
-  border-radius: 4px;
-}
+/* Bekräftelse Sidan */
 
 .confirmation {
   padding-bottom: 3%;
@@ -189,8 +196,4 @@
 
 .confirmation__row__content h1 {
   margin: 3%;
-}
-
-.confirmation__row__content p {
-  font-size: 16px;
 }
